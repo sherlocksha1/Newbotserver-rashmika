@@ -91,7 +91,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -103,7 +103,7 @@ async def next_page(bot, query):
                     text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"📁{get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -113,17 +113,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ɪɴꜰᴏ🦋', 'reqinfo'),
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
                 
@@ -134,17 +134,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ɪɴꜰᴏ🦋', 'reqinfo'),
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
@@ -443,16 +443,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
-                            [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                           ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                             ]
-                            ]
-                        )
+                          [
+                            InlineKeyboardButton('🗑 ᴅᴇʟᴇᴛᴇ', callback_data='close_data'),
+                            InlineKeyboardButton('⏱ ꜱʜᴀʀᴇ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                          ]
+                         ]
                     )
+                )   
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
@@ -491,16 +489,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                 ]
-                ]
-            )
-        )
+                       [
+                         [
+                          InlineKeyboardButton('🗑 ᴅᴇʟᴇᴛᴇ', callback_data='close_data'),
+                          InlineKeyboardButton('⏱ ꜱʜᴀʀᴇ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                          ]
+                        ]
+                    )
+                )   
+                
     elif query.data == "pages":
         await query.answer()
 
@@ -1119,7 +1116,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"📁{get_size(file.file_size)}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
             ]
@@ -1130,17 +1127,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ɪɴꜰᴏ🦋', 'reqinfo'),
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
                 
@@ -1151,17 +1148,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ɪɴꜰᴏ🦋', 'reqinfo'),
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🦋ᴍᴏᴠɪᴇ🦋', 'minfo'),
+                    InlineKeyboardButton(f'🦋ꜱᴇʀɪᴇꜱ🦋', 'sinfo')
                 ]
             )
 
