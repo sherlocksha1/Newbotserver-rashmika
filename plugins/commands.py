@@ -39,7 +39,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('📍𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩📍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🦋𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩🦋', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
                     InlineKeyboardButton('🔎𝐒𝐞𝐚𝐫𝐜𝐡🔍', switch_inline_query_current_chat=''), 
                     InlineKeyboardButton('⚡𝐒𝐮𝐩𝐩𝐨𝐫𝐭⚡', url=GRP_LNK)
@@ -85,7 +85,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('📍𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩📍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🦋𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩🦋', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
                     InlineKeyboardButton('🔎𝐒𝐞𝐚𝐫𝐜𝐡🔍', switch_inline_query_current_chat=''), 
                     InlineKeyboardButton('⚡𝐒𝐮𝐩𝐩𝐨𝐫𝐭⚡', url=GRP_LNK)
