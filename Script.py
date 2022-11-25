@@ -12,9 +12,9 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 ➪ 𝑫𝒆𝒗𝒐𝒍𝒐𝒑𝒆𝒓 : <a href="https://t.me/AFxSU">ɛӼ_ռöֆ</a>
 ➪ 𝑳𝒊𝒃𝒓𝒂𝒓𝒚 : <a href="https://www.program">𝑷𝒚𝒓𝒐𝒈𝒓𝒂𝒎</a>
 ➪ 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 : <a href="https://www.python.org/">𝑷𝒚𝒕𝒉𝒐𝒏 3</a>
-➪ 𝑫𝒂𝒕𝒂 𝒃𝒂𝒔𝒆 : <a href="https:// mongo db. Com">𝑴𝒐𝒏𝒈𝒐𝑫𝑩</a>
+➪ 𝑫𝒂𝒕𝒂 𝒃𝒂𝒔𝒆 : <a href="https://mongodb.Com">𝑴𝒐𝒏𝒈𝒐𝑫𝑩</a>
 ➪ 𝑩𝒐𝒕 𝒔𝒆𝒓𝒗𝒆𝒓 : <a href="https://t.me/share/url?url=Heroku%20https%3A//heroku.com/%0ARender%C2%A0https%3A//render.com/%0ARailway%C2%A0https%3A//railway.app/%0AKoyeb%20https%3A//koyeb.com/">ʜᴇʀᴇ</a>
-➪ 𝑩𝒖𝒊𝒍𝒅 𝑺𝒕𝒂𝒕𝒖𝒔 : <a href="https://status">v2.0.3 [ 𝑺𝒕𝒂𝒃𝒍𝒆 ]</b>"""
+➪ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑪𝒐𝒅𝒆 : <a href="https://t.me/AdhavaaBiriyaniKittiyalo">ʜᴇʀᴇ</b>"""
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 - ꜱᴏᴜʀᴄᴇ - <a href="https://t.me/AdhavaaBiriyaniKittiyalo">ʜᴇʀᴇ</a>
