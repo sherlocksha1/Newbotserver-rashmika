@@ -1212,9 +1212,12 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap =  f"<b>🎪𝙏𝙞𝙩𝙡𝙚 : <a href={url}>{title}</a>\n\n📆 𝙔𝙚𝙖𝙧 : <a href={url}/releaseinfo>{year}</a>\n\n☀️ 𝙇𝙖𝙣𝙜𝙨  : <code>{languages}</code>\n\n📆 𝙍𝙚𝙡𝙚𝙖𝙨𝙚 𝘿𝙖𝙩𝙚 : {release_date}\n\n🌟𝙍𝙖𝙩𝙞𝙣𝙜𝙨 : <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)\n\n📺𝙎𝙩𝙤𝙧𝙮 : <code>{plot}"
+        cap = f"""┏ 🎪 ᴛɪᴛɪʟᴇ : {search}
+┣ 🤴𝙰𝚂𝙺𝙴𝙳 𝙱𝚈 : {message.from_user.mention}
+┣ ⚡𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 : <a href='https://t.me/{temp.U_NAME}'>𝐑𝐚𝐬𝐡𝐮</a>
+┗ 🗑️𝙸𝙽𝙵𝙾 : ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡᴀꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 10 ᴍɪɴᴜᴛᴇꜱ """
     if imdb and imdb.get('poster'):
-        try: 
+        try:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>Hey {message.from_user.mention}, {str(total_results)} results are found in my database for your query {search}. Kindly use inline search or make a group and add me as admin to get movie files. This is a support group so that you can't get files from here...</b>")
             else:
