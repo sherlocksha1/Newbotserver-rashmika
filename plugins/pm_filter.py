@@ -771,13 +771,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🦋 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🦋', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                  ],[
-                    InlineKeyboardButton('🔎𝐒𝐞𝐚𝐫𝐜𝐡🔍', switch_inline_query_current_chat=''), 
-                    InlineKeyboardButton('⚡️𝐒𝐮𝐩𝐩𝐨𝐫𝐭⚡️', url=GRP_LNK)
+                    InlineKeyboardButton('🦋SΞΛᏒCH🦋', switch_inline_query_current_chat=''), 
+                    InlineKeyboardButton('🦋SUᎮᎮԾᏒϮ🦋', url=GRP_LNK)
                  ],[
-                    InlineKeyboardButton('⚙𝐇𝐞𝐥𝐩⚙', callback_data='help'),
-                    InlineKeyboardButton('🧿𝐀𝐛𝐨𝐮𝐭🧿', callback_data='about')
+                    InlineKeyboardButton('♻️𝐇𝐞𝐥𝐩♻️', callback_data='help'),
+                    InlineKeyboardButton('♻️𝐀𝐛𝐨𝐮𝐭♻️', callback_data='about')
                    ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1103,7 +1103,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
