@@ -38,9 +38,10 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('ᴄʜᴇᴄᴋ ᴩᴍ', url=f"https://t.me/{temp.U_NAME}")
-                 ],[
+                    InlineKeyboardButton('ᴄʜᴇᴄᴋ ᴩᴍ', url=f"https://t.me/{temp.U_NAME}"), 
                     InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="t.me/AFxSU")
+                 ],[
+                    InlineKeyboardButton(" ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs 📌", url="https://graph.org/%F0%9D%90%91%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A-11-26")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -60,10 +61,11 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                             InlineKeyboardButton('ᴄʜᴇᴄᴋ ᴩᴍ', url=f"https://t.me/{temp.U_NAME}")
-                                                                         ],[
+                                                                             InlineKeyboardButton('ᴄʜᴇᴄᴋ ᴩᴍ', url=f"https://t.me/{temp.U_NAME}"), 
                                                                              InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="t.me/AFxSU")
-                                                                           ]]
+                                                                         ],[
+                                                                             InlineKeyboardButton(" ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs 📌", url="https://graph.org/%F0%9D%90%91%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A-11-26")
+                                                                         ]]
                                                                ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
